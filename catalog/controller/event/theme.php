@@ -19,7 +19,8 @@ class ControllerEventTheme extends Controller {
 			
 			// initialize Twig environment
 			$twig = new \Twig_Environment($loader, $config);
-				
+
+
 			return $twig->createTemplate($template)->render($args);
 		}
 	}	
